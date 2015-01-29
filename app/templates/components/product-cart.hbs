@@ -1,0 +1,8 @@
+{{#if in-cart}}
+
+{{model.title}} - {{model.price}}
+{{else}}
+<p> {{model.description}} </p>
+
+<button {{action 'add'}}> Add to cart for {{model.price}}</button>
+{{/if}}
