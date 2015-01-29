@@ -2,6 +2,10 @@
 
 {{model.title}} - {{model.price}}
 {{else}}
+<h3>{{#link-to 'product' model}} 
+{{model.title}} 
+{{/link-to}}</h3>
+
 <p> {{model.description}} </p>
 
 <button {{action 'add'}}> Add to cart for {{model.price}}</button>

@@ -8,8 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route("products", function(){
   	
-  	
   });
+  this.route("product",{path: "products/:id"});
+
   this.route("contact");
 });
 

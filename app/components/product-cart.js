@@ -5,5 +5,6 @@ export default Ember.Component.extend({
 		add: function(){
 			this.sendAction('add', this.get('model'));
 		}
-	}
+	},
+	'in-cart': false
 });
