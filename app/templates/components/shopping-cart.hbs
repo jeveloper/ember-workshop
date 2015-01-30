@@ -2,11 +2,11 @@
 
 {{#if items}}
 <ul>
-{{#each product in item}}
-<li> <span {{action 'remove' product}}> X </span>
-{{product-cart in-cart=true model=product}}
-</li>
-{{/each}}
+	{{#each product in item}}
+	<li> <span {{action 'remove' product}}> X </span>
+		{{product-cart in-cart=true model=product}}
+	</li>
+	{{/each}}
 </ul>
 {{else}}
 Nothing added yet.
