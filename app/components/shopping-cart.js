@@ -8,4 +8,5 @@ export default Ember.Component.extend({
 		}
 	},
 	items: this.shoppingCartService.items
+	
 });

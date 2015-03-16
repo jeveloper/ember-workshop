@@ -2,7 +2,8 @@
 
 {{#if items}}
 <ul>
-	{{#each product in item}}
+
+	{{#each product in items}}
 	<li> <span {{action 'remove' product}}> X </span>
 		{{product-cart in-cart=true model=product}}
 	</li>
